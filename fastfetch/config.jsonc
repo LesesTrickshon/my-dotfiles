@@ -1,0 +1,109 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+    "type": "kitty",        // Logo type: auto, builtin, small, file, etc.
+    "source": "~/.config/bashrc/fungus.png",      // Built-in logo name or file path
+    "width": 30,           // Width in characters (for image logos)
+    "height": 13,          // Height in characters (for image logos)
+    "padding": {
+        "top": 1,          // Top padding
+        "left": 1,         // Left padding
+        "right": 1         // Right padding
+    },
+    "color": {             // Override logo colors
+        "2": "white",
+        "1": "#db7093"
+    }
+  },
+
+  "modules": [
+    //"break",
+    {
+      "type": "custom",
+      "format": "┏━━━━━━━━━━━━━━━┫ ✨ USEAGE ✨ ┣━━━━━━━━━━━━━━━┫",
+      "color": {
+        "1": "blue",
+      },
+    },
+    {
+      "type": "title",
+      "key": "┣   User:"
+    },
+    {
+      "type": "host",
+      "key": "┣ 󰍹  PC:",
+    },
+    {
+      "type": "uptime",
+      "key": "┗   Uptime:"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "┏━━━━━━━━━━━━━━━┫ ✨ SOFTWARE ✨ ┣━━━━━━━━━━━━━━━┫"
+    },
+    {
+      "type": "os",
+      "key": "┣   OS:",
+    },
+    {
+      "type": "kernel",
+      "key": "┣   Kernel:"
+    },
+    {
+      "type": "shell",
+      "key": "┣   Shell:"
+    },
+    {
+      "type": "wm",
+      "key": "┗   WM:"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "┏━━━━━━━━━━━━━━━┫ ✨ HARDWARE ✨ ┣━━━━━━━━━━━━━━━┫"
+    },
+    {
+      "type": "cpu",
+      "key": "┣   CPU:",
+    },
+    {
+      "type": "gpu",
+      "key": "┣   GPU:",
+    },
+    {
+      "type": "memory",
+      "key": "┗   RAM:",
+    },
+    //----"title",
+    //----"separator",
+    //----"os",
+    //"host",
+    //----"kernel",
+    //----"uptime",
+    //"packages",
+    //----"shell",
+    //"display",
+    //"de",
+    //"wm",
+    //"wmtheme",
+    //"theme",
+    //----"icons",
+    //"font",
+    //"cursor",
+    //----"terminal",
+    //----"terminalfont",
+    //"cpu",
+    //"gpu",
+    //"memory",
+    //"swap",
+    //"disk",
+    //"localip",
+    //"battery",
+    //"poweradapter",
+    //"locale",
+    //"break",
+    //----"colors"
+  ]
+}
